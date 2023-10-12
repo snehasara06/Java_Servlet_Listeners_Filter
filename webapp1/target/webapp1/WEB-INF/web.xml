@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <listener>
+    <listener-class>Listener.RequestListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>RequestListener</servlet-name>
+    <servlet-class>Listener.RequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestListener</servlet-name>
+    <url-pattern>/requestlistener</url-pattern>
+  </servlet-mapping>
+
+
+  <listener>
+    <listener-class>Listener.ContextListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>ContextListener</servlet-name>
+    <servlet-class>Listener.ContextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextListener</servlet-name>
+    <url-pattern>/contextlistener</url-pattern>
+  </servlet-mapping>
+
+<listener>
+    <listener-class>Listener.CarListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>name</param-name>
+    <param-value>Aston Martin</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>CarListener</servlet-name>
+    <servlet-class>Listener.CarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarListener</servlet-name>
+    <url-pattern>/carlistener</url-pattern>
+  </servlet-mapping>
+
+<listener>
+    <listener-class>Listener.SessionListener1</listener-class>
+  </listener> 
+    <session-config>
+    <session-timeout>3</session-timeout>
+  </session-config> 
+  <servlet>
+    <servlet-name>SessionServlet</servlet-name>
+    <servlet-class>Listener.SessionServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/sessionlistener1</url-pattern>
+  </servlet-mapping>
+
+<listener>
+    <listener-class>Listener.SessionListener2</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>ServletSession2</servlet-name>
+    <servlet-class>Listener.SessionServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletSession2</servlet-name>
+    <url-pattern>/sessionlistener2</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+  <context-param>
+    <param-name>dname</param-name>
+    <param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>Employee</servlet-name>
+    <servlet-class>Employee.Details</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Employee</servlet-name>
+    <url-pattern>/employeeDetails</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>Employee.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>Serv1</servlet-name>
+    <servlet-class>Kgisl.Serv1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Serv1</servlet-name>
+    <url-pattern>/serv1</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>Serv2</servlet-name>
+    <servlet-class>Kgisl.Serv2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Serv2</servlet-name>
+    <url-pattern>/serv2</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+
+
+  <servlet>
+    <servlet-name>SendRedirect</servlet-name>
+    <servlet-class>Kgisl.Serv3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendRedirect</servlet-name>
+    <url-pattern>/isro</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+
+
+  <servlet>
+    <servlet-name>Servlet4</servlet-name>
+    <servlet-class>Kgisl.Serv4</servlet-class>
+    <init-param>
+      <param-name>initparam</param-name>
+      <param-value>Kgisl.Serv4</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet4</servlet-name>
+    <url-pattern>/servlet4</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  <servlet>
+    <servlet-name>Servlet5</servlet-name>
+    <servlet-class>Kgisl.Serv5</servlet-class>
+    <init-param>
+      <param-name>initparam</param-name>
+      <param-value>Kgisl.Serv5</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet5</servlet-name>
+    <url-pattern>/servlet5</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  <servlet>
+    <servlet-name>Servlet6</servlet-name>
+    <servlet-class>Kgisl.Serv6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet6</servlet-name>
+    <url-pattern>/servlet6</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  <filter>
+    <filter-name>Filter1</filter-name>
+    <filter-class>Filter1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter1</filter-name>
+    <url-pattern>/servlet6</url-pattern>
+  </filter-mapping>
+
+</web-app>
